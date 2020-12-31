@@ -157,13 +157,30 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1609434180458">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-720.-1440.3440.1410@0.0.1920.1050" timestamp="1609434180458" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609434010357">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-720.-1440.3440.1410@0.0.1920.1050" timestamp="1609434010357" />
+    <state x="763" y="248" key="NewPhpClassDialog" timestamp="1609433287131">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="763" y="248" key="NewPhpClassDialog/0.0.1920.1050/-720.-1440.3440.1410@0.0.1920.1050" timestamp="1609433287131" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1609433912962">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050/-720.-1440.3440.1410@0.0.1920.1050" timestamp="1609433912962" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1609420448161">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1609420448161" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1609427744124">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1609434258309">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-720.-1440.3440.1410@0.0.1920.1050" timestamp="1609434258309" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1609427744124" />
   </component>
 </project>

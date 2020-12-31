@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Resource\Hue;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->singleton(Hue::class, fn () => new Hue(config('hue.base_url'), config('hue.user_token')));
     }
 }

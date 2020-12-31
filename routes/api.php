@@ -18,3 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('login', 'LoginController@login');
+
+Route::group([ 'middleware' => 'auth:sanctum' ], function () {
+    Route::get('/lights', 'LightController@index');
+    Route::get('/light/{id}', 'LightController@show');
+});
