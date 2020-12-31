@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Resource\Hue;
+use App\Resource\Light;
 use Illuminate\Http\Request;
 
 class LightController extends Controller
@@ -32,11 +33,11 @@ class LightController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return array|\Illuminate\Http\Response
      */
     public function show($id)
     {
-        return $this->hue->getLight($id);
+        return $this->hue->findLight($id)->toArray();
     }
 
     /**
@@ -44,10 +45,14 @@ class LightController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return array|\Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
-        //
+        $light = $this->hue->findLight($id);
+
+        $light->update($request->all());
+
+        return $light->toArray();
     }
 }

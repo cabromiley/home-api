@@ -28,9 +28,15 @@ class Hue
         return Http::get($this->makeBase() . '/lights')->json();
     }
 
-    public function getLight($id)
+    public function findLight($id)
     {
-        return Http::get($this->makeBase() . 'lights/' . $id)->json();
+        return new Light($id, Http::get($this->makeBase() . 'lights/' . $id)->json());
+    }
+
+    public function updateLightState($id, array $state)
+    {
+        \Log::info('Called: ' . $this->makeBase() . '/lights/' . $id . '/state/');
+        return Http::put($this->makeBase() . '/lights/' . $id . '/state/', $state )->json();
     }
 
     private function makeBase()
