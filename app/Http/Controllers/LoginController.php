@@ -16,9 +16,7 @@ class LoginController extends Controller
             $user = Auth::guard('web')->user();
             return response([
                 'authenticated' => true,
-                'user' => [
-                    'name' => $user->name
-                ]
+                'user' => $user->toArray()
             ], 200);
         }
 
