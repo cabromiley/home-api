@@ -27,4 +27,11 @@ class LoginController extends Controller
             'user' => []
         ], 401);
     }
+
+    public function logout (Request $request)
+    {
+        Auth::guard('web')->logout();
+
+        return response(null, 204);
+    }
 }

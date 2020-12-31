@@ -17,9 +17,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', 'LoginController@login');
+Route::post('/login', 'LoginController@login');
 
 Route::group([ 'middleware' => 'auth:sanctum' ], function () {
+    Route::post('/logout', 'LoginController@logout');
     Route::get('/lights', 'LightController@index');
     Route::get('/light/{id}', 'LightController@show');
     Route::put('/light/{id}', 'LightController@update');
